@@ -3,12 +3,6 @@
   box-sizing: border-box;
   
 }
-body{
-  background-color: #ECECEC;
-  padding: 0;
-  margin: 0;
-
-}
 
 .parent-container{
   display: grid;
@@ -17,7 +11,7 @@ body{
 }
 
 .parent-container div{
-  //border-style: solid;
+  border-style: solid;
   //border-color: black;
   //border-width: 2px;
 }
@@ -26,7 +20,6 @@ body{
   grid-column: 2 / 5;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  background: white;
 }
 
 .super-header{
@@ -53,8 +46,8 @@ input[type=search] {
 .top-pp{
   background-color: pink;
   border-radius: 50px;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 .top-p-name{
   display: grid;
@@ -66,7 +59,7 @@ input[type=search] {
 
 .account-header{
   display: grid;
-  grid-template-columns: 6fr 4fr;
+  grid-template-columns: 5fr 3fr;
 }
 
 .account-header p{
@@ -80,7 +73,6 @@ input[type=search] {
 .butt-container{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  justify-items: start;
 }
 
 .main-p{
@@ -97,8 +89,8 @@ input[type=search] {
 .bottom-pp{
   border-radius: 40px;
   background-color: pink;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 p{
@@ -112,11 +104,10 @@ h4{
 .butt-container{
   align-items: center;
   justify-items: center;
-  margin-right: 3rem;
 }
 button{
-  height: 2rem;
-  width: 5rem;
+  height: 2.5rem;
+  width: 6.5rem;
   padding: 0 1rem;
   text-align: center;
   border-radius: 20px;
@@ -136,7 +127,6 @@ button{
   text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
-  margin: 1rem 0;
 }
 
 ul,li{
@@ -158,32 +148,26 @@ li{
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
-  background-color: #ECECEC;
-  padding: 1rem;
-  gap: 1rem;
-  align-content: space-between;
 }
 
 .projects-container{
   grid-column: 1 /2;
   grid-row: 1 / 3;
-  //margin: 1rem;
+  margin: 1rem;
 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
-  align-items: center;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
   gap: 1.3rem;
-  justify-content: space-evenly;
 
 }
 
 .project-card{
-  height: 11rem;
+  height: 200px;
+  width: 300px;
+  margin: 2px;
   padding: 10px;
-  background-color: white;
+  //background-color: pink;
   
-  border-left-style: solid;
   border-left-color: orange;
   border-left-width: 8px;
   border-radius: 10px;
@@ -193,60 +177,15 @@ li{
   font-weight: bold;
 }
 .project-content{
-  line-height: .9rem;
-  font-size: .9rem;
+  //line-height: .8rem;
+  font-size: .8rem;
 }
 
 .announcements-container{
   grid-column: 2 / 3;
-  border-style: none;
-  border-width: 0;
-  margin-right: .5rem;
 
-}
-.ann-content-container{
-  padding: .5rem;
-  background-color: white;
-  border-radius: 10px;
-}
-
-.ann{
-  border-bottom-color: pink;
-  font-size: .8rem;
-  line-height: .8rem;
-  padding: .5rem;
-  margin: .5rem;
-  border-bottom-style: solid;
-  border-bottom-color: #ECECEC;
-  border-bottom-width: 2px;
-}
-.ann-title{
-  font-weight: bold;
-  font-size: .9rem;
-}
-
-.trending-super-container{
-  margin-right: .5rem;
 }
 .trending-container{
-  grid-column: 2 / 4;
-  padding: .5rem;
-  background-color: white;
-  border-radius: 10px;
+  grid-column: 2 / 4
 
-}
-.top-pp{
-  place-self: center;
-}
-.trend-cont-container{
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  padding: .3rem;
-  font-size: .7rem;
-  margin: .5rem;
-  gap: .5rem;
-}
-.tc-title{
-  font-weight: bold;
-  font-size: .9rem;
 }
