@@ -7,12 +7,14 @@ body{
   background-color: #ECECEC;
   padding: 0;
   margin: 0;
-
+  height: 100vh;
 }
 
 .parent-container{
   display: grid;
   grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 10fr;
+  height: 100%;
 
 }
 
@@ -25,8 +27,9 @@ body{
 .header{
   grid-column: 2 / 5;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
   background: white;
+  padding-top: .5rem;
 }
 
 .super-header{
@@ -39,16 +42,23 @@ body{
   padding: 0 2rem;
 }
 input[type=search] {
-  border-radius: 8px;
+  border-radius: 20px;
+  height: 2rem;
+  background: #ececec;
 }
 .top-my-profile{
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 3rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.top-my-profile div{
 }
 .top-pp-container{
   display: grid;
-  align-items: center;
-  justify-content: center;
+  justify-content: end;
 }
 .top-pp{
   background-color: pink;
@@ -57,11 +67,8 @@ input[type=search] {
   height: 2.5rem;
 }
 .top-p-name{
-  display: grid;
-  align-items: center;
-  justify-content: center;
   font-weight: 900;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .account-header{
@@ -111,18 +118,18 @@ h4{
 
 .butt-container{
   align-items: center;
-  justify-items: center;
   margin-right: 3rem;
+  justify-items: stretch;
 }
 button{
   height: 2rem;
-  width: 5rem;
   padding: 0 1rem;
   text-align: center;
   border-radius: 20px;
   background-color: #2691de;
   color: white;
   font-weight: bold;
+  margin: 0 1rem;
 }
 
 .sidebar{
@@ -161,12 +168,14 @@ li{
   background-color: #ECECEC;
   padding: 1rem;
   gap: 1rem;
-  align-content: space-between;
 }
 
-.projects-container{
+.projects-section{
+
   grid-column: 1 /2;
   grid-row: 1 / 3;
+}
+.projects-container{
   //margin: 1rem;
 
   display: grid;
@@ -202,12 +211,14 @@ li{
   border-style: none;
   border-width: 0;
   margin-right: .5rem;
+  align-content: stretch;
 
 }
 .ann-content-container{
   padding: .5rem;
   background-color: white;
   border-radius: 10px;
+  height: 90%;
 }
 
 .ann{
@@ -233,6 +244,7 @@ li{
   padding: .5rem;
   background-color: white;
   border-radius: 10px;
+  height: 90%;
 
 }
 .top-pp{
@@ -249,4 +261,10 @@ li{
 .tc-title{
   font-weight: bold;
   font-size: .9rem;
+}
+
+.sec-title{
+  font-weight: bold;
+  margin: .5rem 0;
+  font-size: 1.2rem;
 }
